@@ -177,7 +177,7 @@ const Calendar: FunctionComponent = () => {
                             style={{ marginBottom: "-30px" }}
                         >
                             {days.map((day) => (
-                                <div key={day} className="px-2 py-2 w-1/7">
+                                <div key={day} className="px-2 py-2 w-[14.28%]">
                                     <div className="text-gray-600 text-sm uppercase tracking-wide font-bold text-center">
                                         {day}
                                     </div>
@@ -188,13 +188,13 @@ const Calendar: FunctionComponent = () => {
                             {emptyDays.map((emptyDay) => (
                                 <div
                                     key={emptyDay}
-                                    className="text-center border-r border-b px-4 pt-2 h-32 w-1/7"
+                                    className="text-center border-r border-b px-4 pt-2 h-32 w-[14.28%]"
                                 />
                             ))}
                             {numOfDays.map((date, index) => (
                                 <div
                                     key={index}
-                                    className="px-4 pt-2 border-r border-b relative h-32 w-1/7"
+                                    className="px-4 pt-2 border-r border-b relative h-32 w-[14.28%]"
                                 >
                                     <div
                                         className={classNames(

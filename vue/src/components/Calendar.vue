@@ -25,7 +25,7 @@
       <div class="-mx-1 -mb-1">
         <div class="flex flex-wrap -mb-8" style="margin-bottom: -30px;">
           <template v-for="day in days">
-            <div class="px-2 py-2 w-1/7">
+            <div class="px-2 py-2 w-[14.28%]">
               <div v-text="day" class="text-gray-600 text-sm uppercase tracking-wide font-bold text-left mb-1"></div>
             </div>
           </template>
@@ -33,10 +33,10 @@
 
         <div class="flex flex-wrap border-t border-l">
           <template v-for="emptyDay in emptyDays">
-            <div class="text-left border-r border-b px-4 pt-2 h-32 w-1/7"></div>
+            <div class="text-left border-r border-b px-4 pt-2 h-32 w-[14.28%]"></div>
           </template>
           <template v-for="(date, dateIndex) in no_of_days">
-            <div class="px-4 pt-2 border-r border-b relative h-32 w-1/7">
+            <div class="px-4 pt-2 border-r border-b relative h-32 w-[14.28%]">
               <div @click="showDayModal(date)" v-text="date"
                    class="inline-flex w-6 h-6 items-center justify-center cursor-pointer text-center leading-none rounded-full transition ease-in-out duration-100"
                    :class="{'bg-blue-500 text-white': isToday(date) === true, 'text-gray-700 hover:bg-blue-200': isToday(date) === false }"></div>
